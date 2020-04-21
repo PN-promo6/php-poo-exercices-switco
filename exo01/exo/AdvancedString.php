@@ -13,18 +13,18 @@ class AdvancedString
 
     public function bold()
     {
-        echo '<b>' . $this->internalString . '</b>';
+        return '<b>' . $this->internalString . '</b>';
     }
     public function italic()
     {
-        echo '<i>' . $this->internalString . '</i>';
+        return '<i>' . $this->internalString . '</i>';
     }
     public function underline()
     {
-        echo '<style="text-decoration: underline;">' . $this->internalString . '</style>';
+        return '<u>' . $this->internalString . '</u>';
     }
     public function upperCase()
     {
-        echo strtoupper($this->internalString);
+        return strtoupper($this->internalString);
     }
 }
